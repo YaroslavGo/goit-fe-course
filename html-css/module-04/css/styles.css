@@ -9,6 +9,12 @@ body {
     margin: 0;
 }
 
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 .wrapper {
   width: 1024px;
   height: 100%;
