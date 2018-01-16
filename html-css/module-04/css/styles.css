@@ -1,6 +1,14 @@
 body {
     padding-top: 50px;
-    counter-reset: list 1;
+    counter-reset: list;
+    background-image: url('img/page-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    word-spacing: 4px; 
 }
 
 * {
@@ -17,29 +25,34 @@ body {
 
 .wrapper {
   width: 1024px;
-  height: 100%;
   padding: 50px;
   margin:auto;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  font-style: normal;
-  word-spacing: 4px; 
+  background-color: #ffffff; 
 }
 
 .agency {
     width: 69%;
     display: inline-block;
-    margin-right: 50px; 
+    margin-right: calc(7% - 8px); 
     vertical-align: top; 
 }
 
+.agency p:last-child{
+ margin-bottom: 0;   
+}
 
 .principles {
     width: 24%;
     display: inline-block;
   vertical-align: top;
- float: right;
+}
+
+.principles p{
+    margin-bottom: 0;
+}
+
+.principles li{
+    margin-bottom: 20px;
 }
 
 .offers {
@@ -50,11 +63,11 @@ body {
 }
 
 
-li.point:before {
+li.offers-list-item:before {
     content: "→";
     left: -15%;
     color: rgba(16, 161, 193, 0.97);
-    position: absolute;
+    display: inline-block;
 }
 
 .testimonial {
@@ -64,35 +77,33 @@ li.point:before {
     vertical-align: top;
 }
 
-.point-1{
+.testimonial-text{
     background-color: #f5eceb;
     padding: 20px;
     margin-bottom: 0;
 }
 
-.point-1:before{
+.testimonial-text:before{
     content:"“";
 }
-.point-1:after{
+.testimonial-text:after{
     content:"”";
 }
 
-.avtor h5 {
+.testimonial-author h5 {
     text-align: center;
 }
-.avtor p {
+.testimonial-author p {
     text-align: center;
 }
 
 .first-block{
     padding-bottom: 50px;
-    border-bottom: 0.5px solid grey;
-    display: block;
+    border-bottom: 0.5px solid grey;    
 }
 
 .second-block{
     margin-top: 50px;
-    display: block;
 }
 
 h2 {
@@ -100,9 +111,6 @@ h2 {
   font-size: 32px;
   margin-bottom: 40px;
   font-family: 'Pathway Gothic One', sans-serif; 
-}
-
-h2 {
   color: #263555;
   font-weight: normal;
 }
@@ -136,12 +144,12 @@ li{
    list-style-type: none; 
 }
 
-.test{
+.principles-article {
     display: inline-block;
+    width: 78%;
 }
 
-.box h5 {
-    counter-increment: list;
+.principles-list-item h5 {
     font-weight: 400;
     color: #263555;
     margin-bottom: 10px;
@@ -151,46 +159,41 @@ li{
 }
 
 
-.box-1{
-    position: relative;
-    left: 15%;
-    display: inline-block;
-    width: 85%;
+
+.principles-list-item::before {
+	counter-increment: list;
+	content: counter(list);
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #1789fc;
+	color: #fefefe;
+	text-align: center;
+	line-height: 30px;
+    vertical-align: top;
 }
 
-.test:before {
-    content: counter(list);
-    display: inline-block;
-    background: #38afe5;
-    height: 1.8em;
-    width: 1.8em;
-    border-radius: 50%;
-    color: #ffffff;  
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.8em;
+.principles li:last-child {
+	margin-bottom: 0;
 }
 
-body {
-    background-image: url('page-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-li.point a {
+li.offers-list-item a {
     text-decoration: none;
     color: #263555;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
+    display: inline-block;
 }
 
-li.point {
+li.offers-list-item {
     list-style: none;
     margin-bottom: 25px;
     position: relative;
     left: 15%;
+    display: block;
+    
 }
 
 li {
@@ -198,12 +201,12 @@ li {
     text-align: -webkit-match-parent;
 }
 
-ul.list {
+ul.offers-list {
     column-width: 200px;
     column-gap: 50px;
 }
 
-.point-1-box::after {
+.testimonial-box::after {
     content: " ";
     display: inline-block;
     position: relative;
@@ -216,3 +219,4 @@ ul.list {
     left: 100px;
     top: -16px;
 }
+
