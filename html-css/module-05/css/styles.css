@@ -1,16 +1,11 @@
-.bg-logo{
-  display:inline-block;
-  background-color: snow;
-  height: 140px;
-  width: 140px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: 50%;
-}
+
 
 .logo-text {
+  background-color: snow;
+  display:block;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
   font-size: 60px;
   position: absolute;
   left: 50%;
@@ -19,6 +14,8 @@
   color: #263555;
   font-family: 'Dorsa', sans-serif;
   text-decoration: none;
+  text-align: center;
+  line-height: 140px;
 }
 
 .wrapper{
@@ -109,17 +106,48 @@
     top: -85px;
 }
 
+/* -------------------------------- */
+.slider-text-first {
+  display: block;
+  position:relative; 
+   }
 
-__________________
-
-
-.box {
-    display: block;
-    height: 100px;
-    width: 100px;
-    background-color: red;
+.slider-text-first p{
+  text-transform: uppercase;
+  font-size:23px;
+  display: block;
+  position: absolute;
+  top: 235px;
+  height: 60px;
+  width: 225px;
+  background-color: #FFF;
+  color: #263555;
+  z-index: 30;
+  line-height: 60px;
+  text-align: center;
+  border-left: 0.5px solid #ececeb;
 }
 
+.slider-text-second {
+  display: block;
+  position:relative; 
+   }
+
+
+.slider-text-second p{
+  text-transform: uppercase;
+  font-size:33px;
+  display: block;
+  position: absolute;
+  top: 295px;
+  height: 60px;
+  width: 270px;
+  background-color: #38afe5;
+  color: #FFF;
+  z-index: 30;
+  line-height: 60px;
+  text-align: center;
+}
 
 .carousel img {
   display: block;
@@ -140,17 +168,13 @@ __________________
     margin:  auto;
     font-family: 'Pathway Gothic One', sans-serif;
     background-color: #FFF;
-    padding: 0 60px 60px 60px;
+    padding: 60px 60px 60px 60px;
 }
 
 .slick-arrow {
   border: 0;
   position: relative;
-  height: 50px;
-  width: 60px;
   z-index: 10;
-  background-color: #008080;
-  color: #ffffff;
   cursor: pointer;
   padding: 0;
   outline: 0;
@@ -167,9 +191,9 @@ __________________
 .slick-prev {
     display: inline-block;
     background-color: #38afe5;
-    position: relative;
-    top: 561px;
-    left: 56px;
+    position: absolute;
+    top: 80%;
+    left: 5%;
     width: 40px;
     height: 80px;
     border-radius: 100% 0px 00px 100% / 50% 0 0 50%;
@@ -177,14 +201,15 @@ __________________
     font-size: 20px;
     line-height: 80px;
     text-decoration: none;
+    
 }
 
 .slick-next {
   display: inline-block;
   background-color: #38afe5;
-  position: relative;
-  bottom: 100px;
-  left: 100px;
+  position: absolute;
+  top:80%;
+  left: 9%;
   width: 40px;
   height: 80px;
   border-radius: 0 100% 100% 0 / 0 50% 50% 0;
@@ -192,26 +217,23 @@ __________________
   font-size: 20px;
   line-height: 80px;
   text-decoration: none;
-  margin-left:-4px;
+  margin-left:4px;
+  
 }
 
-.slide-prev::before {
+.slick-prev::before {
     content: "\2190";
-    color: red;
-   
+    color: #FFF;   
 }
 
-.slide-next::after {
+.slick-next::after {
     content: "\2192";
     color: #FFF;
+    
 }
 
-__________
 
-.fix-top{
-  display: block;
-  z-index: 10;
-}
+
 
 .fix-top a {
     position: fixed;
@@ -222,7 +244,8 @@ __________
     border-radius: 50%;
     background-color:#38afe5;
     text-align: center;
-    
+    display: block;
+   z-index: 10;
 }
   
 .fix-top-text{
@@ -232,12 +255,12 @@ __________
   font-size: 30px;
 }
 
-
 .section h2{
     text-transform: uppercase;
     color: #263555;   
     font-size: 30px; 
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .gallery{
@@ -272,21 +295,27 @@ __________
     font-size: 33px;
     text-align: center;
     font-weight:100;
-    margin-bottom: 10px;     
+    margin-bottom: 10px; 
+    font-stretch: condensed;    
 }
 
 .gallery-image-article p{
     color: #FFF;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 15px;
     text-align: justify;
+    
+}
+
+.image-button {
+  display: block;
 }
 
 .gallery-image-article button{
     display: block;
-    position: relative;
-    top: 70px;
-    left: 70px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
 }
 
 .gallery-image:hover>.gallery-image-article{
