@@ -89,7 +89,7 @@
 
 .header-list-item:hover>.menu-about {
   display: block;
-  background: snow;
+  background: #FFF;
 }
 
 .header-list-item:hover>.menu-about::after{
@@ -272,7 +272,10 @@
     position: relative;
 }
 
-
+.gallery-image img{
+  display: block;
+  width: 100%;
+}
 
 .gallery-image-article{
     display: none;
