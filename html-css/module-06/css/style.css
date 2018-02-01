@@ -34,10 +34,13 @@
     font-family: 'Pathway Gothic One', sans-serif;
     position: relative; 
   }
-  
+  .header-list{
+      display: flex;
+      justify-content: space-around;
+  }
+
   .header-list-item{
-    display: inline-block;
-    margin-right:40px;
+    flex: 1 0 10%;
     color: #FFF;
     position: relative;
   }
@@ -186,9 +189,119 @@
 .gallery-image:hover::before{
     opacity: 1;
 }
-/* ----------------------------------- */
+/* ------------------------------- */
+.first-footer{
+    width: 1020px;
+    padding: 25px 186px 30px 140px;
+    margin:  auto;
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: #263555;
+    display: flex;
+    align-items: center;
+}
 
-.section{
+.block-information{
+ flex:1 0 85%;
+}
+
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.information li{
+    flex: 1 0 30%;
+    padding: 5px 5px 15px 5px;
+}
+
+.information a{
+ font-size: 16px;
+ color: #FFF;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+.block-contacts{
+flex:1 0 30%;
+}
+
+.contact{
+    display: flex;
+    flex-flow:column wrap;
+}
+
+.contact p{
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact li{
+    flex: 1 0 30%;
+    padding: 5px 5px 5px 5px;
+}
+
+.contact a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.contact li:nth-child(n+2){
+    padding: 3px;
+}
+/* ____________________ */
+
+.second-footer{
+    width: 1020px;
+    padding: 25px 60px;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+}
+
+.second-footer i{
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #e4b264;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* ------------------- */
+.fix-top a {
+    position: fixed;
+    bottom: 10%;
+    right: 26%;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color:#38afe5;
+    text-align: center;
+    display: block;
+   z-index: 10;
+}
+  
+.fix-top i{
+  color: #FFF;
+  text-decoration: none;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+/* .section{
     width: 70%;
 }
 
@@ -233,7 +346,6 @@
     display: flex;
     justify-content: center;
 }
-/* __________________________ */
 .section-text h3:hover{
     transform: scale(1.5);
     transition: transform 0.2s ease-in-out;
@@ -252,4 +364,6 @@
 .section-button:hover{
     transform: scale(2);
     transition: transform 0.2s ease-in-out; 
-}
+} */
+
+/* ______________________________ */
