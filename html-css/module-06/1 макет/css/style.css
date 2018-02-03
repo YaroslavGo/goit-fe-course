@@ -20,7 +20,6 @@
   }
   
   .wrapper{
-     height: 100vh;
      background-image: url('../img/20.png');
      background-repeat: no-repeat;
      background-size: cover;
@@ -76,14 +75,15 @@
   }
   /*  __________________________________________*/
   .menu-about { 
-    display: none;
+    opacity: 0;
+    display: block;
     position: absolute;
     list-style: none;
     background: snow;
     border-radius: 4px;
     padding: 5px 10px;
     text-align:center;
-    left:50%;
+    left:35%;
     transform: translateX(-50%)
   }
   .menu-about-item a{
@@ -91,24 +91,25 @@
   }
   
   .header-list-item:hover>.menu-about {
-    display: block;
+    opacity: 1;
     background: snow;
   }
   
   .header-list-item:hover>.menu-about::after{
-    display: block;
+    opacity: 1;
   }
   
   .menu-about::after {
+      opacity: 0;
       content: " ";
-      display: none;
+      display: block;
       position: relative; 
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 0 5px 10px 5px;
       border-color: transparent transparent #FFF transparent;
-      left: 25px;
+      left: 17px;
       top: -85px;
   }
     
@@ -126,7 +127,6 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
     width: 100%;
 }
 
@@ -201,7 +201,7 @@
 }
 
 .block-information{
- flex:1 0 85%;
+ flex:1 0 80%;
 }
 
 .information{
@@ -223,7 +223,7 @@
 }
 
 .block-contacts{
-flex:1 0 30%;
+    flex:0 1 30%;
 }
 
 .contact{
@@ -250,8 +250,12 @@ flex:1 0 30%;
     font-size: 11px;
 }
 
+.contact li:nth-child(1){
+    margin-bottom: 8px;
+}
+
 .contact li:nth-child(n+2){
-    padding: 3px;
+    padding: 1px;
 }
 /* ____________________ */
 
@@ -263,7 +267,7 @@ flex:1 0 30%;
     justify-content: center;
 }
 
-.second-footer i{
+.second-footer a{
     background-color: #FFF;
     border-radius: 50%;
     color: #e4b264;
@@ -272,6 +276,7 @@ flex:1 0 30%;
     height: 35px;
     line-height: 35px;
     text-align: center;
+    text-decoration: none;
 }
 
 /* ------------------- */
@@ -285,7 +290,7 @@ flex:1 0 30%;
     background-color:#38afe5;
     text-align: center;
     display: block;
-   z-index: 10;
+    z-index: 10;
 }
   
 .fix-top i{
