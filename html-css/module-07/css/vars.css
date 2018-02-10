@@ -1,0 +1,12 @@
+:root {
+    --yellow-color: #fed136;
+    --white-color: #ffffff;
+    --primary-dark-color: #222222;
+    --secondary-dark-color: #777777;
+
+    
+    --main-font-title: 'Montserrat', sans-serif;
+    --seconfary-font: 'Roboto Slab', serif;
+    --title-text-font: 'Noto Serif', serif;
+    --logo-font: 'Petit Formal Script', cursive;
+  }
