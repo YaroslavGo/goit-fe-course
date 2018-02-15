@@ -1,0 +1,10 @@
+:root {
+    --white-color: #ffffff;
+    --primary-dark-color: #333333;
+    --secondary-dark-color: #666666;
+    --button-color: #ff4e50;
+
+    
+    --main-font-title: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+  }
