@@ -1,7 +1,7 @@
 /* ----HEADER----- */
     .masthead-wrapper {
         background-color: rgba(0, 0, 0, 0.2);
-        background-image: url('../img/masthead-wrapper.png');
+        background-image: url('../img/masthead-wrapper@0.5.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -11,13 +11,10 @@
     .header-container{
         min-height: 33.875rem;
         padding-top: 1.25rem;
-        /* padding-bottom: 8.75rem; */
         text-align: center;
     }
 
     .header-list{
-        display: flex;
-        flex-direction: column;
         margin-bottom: 2.5rem;
     }
 
@@ -36,6 +33,7 @@
     }
 
     .header-list-btn{
+        display: inline-block;
         padding: 0.625rem 0.9375rem;
         font-size: 0.875rem;
         color: var(--white-color);
@@ -83,26 +81,20 @@
         background-color: var(--button-color);
         border-radius: 2.25rem;
     }
-
 /* ----MEDIA----748 tablet*/
 
-@media (max-width:699px){
-    .header-list a{
-        order: 1;
+
+@media (min-width:748px){
+
+    .masthead-wrapper {    
+        background-image: url('../img/masthead-wrapper.png');
     }
-}
-
-
-@media (min-width:700px){
 
     .header-container{
         min-height: 43.75rem;
     }
 
     .header-list{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         padding: 0;
         margin-bottom: 10rem;
     }
@@ -125,12 +117,8 @@
 
 @media (min-width:940px){
 
-    .header-container{
-        padding:1.25rem 8.625rem 14.625rem 8.625rem;
-    }
-
+    
     .header-list{
-        justify-content: space-between;
         padding: 0;
     }
 
@@ -152,4 +140,4 @@
     }
 
     
-}
+} 

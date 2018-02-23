@@ -1,0 +1,12 @@
+:root {
+    --white-color: #ffffff;
+    --primary-dark-color: #515151;
+    --green-color: #1abc9c;
+    --price-shift:#323232;
+    --price:#8c8c8c ;
+    --navigation: #0f0101;
+
+    
+    --main-font-title: 'Open Sans', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+  }

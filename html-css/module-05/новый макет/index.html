@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module-05</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="masthead-wrapper">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2">
+                    <a href="#" class="logo"><span>m</span>art</a>
+                </div>
+                <nav class="col-lg-5">
+                    <a href="#" class="nav-item">home</a>
+                    <a href="#" class="nav-item">about us</a>
+                    <a href="#" class="nav-item">page</a>
+                    <a href="#" class="nav-item">shop</a>
+                    <a href="#" class="nav-item">blog</a>
+                    <a href="#" class="nav-item">contact us</a>
+                </nav>
+                <div class="carousel col-12">
+                        <div>
+                          <img src="img/slide4.jpg" alt="girls" >
+                          <div class="slider-text-first">
+                            <p>affordable paris tours</p>
+                          </div>
+                          <div class="slider-text-second">
+                            <p>city tours/tickets/tour guides</p>
+                          </div>
+                        </div>
+                        <div>
+                            <img src="img/masthead-wrapper.png" alt="happy friends" >
+                            <div class="slider-text-first">
+                                <p>affordable paris tours</p>
+                            </div>
+                            <div class="slider-text-second">
+                                <p>city tours/tickets/tour guides</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="main-title">new collection</h1>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+	    prevArrow: '<button class="slick-prev"></button>',
+        nextArrow: '<button class="slick-next"></button>',
+      });
+    });
+  </script>
+</body>
+
+

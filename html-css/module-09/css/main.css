@@ -19,9 +19,7 @@
     }
 
     .partner-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+       align-items: center;
     }
 
     .partner-card img{
@@ -30,14 +28,16 @@
         height: 7.5rem;
         width: 7.5rem;
         margin-bottom: 1.4375rem;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .card-title{
-    font-family: var(--main-font-title);
-    font-weight: 700;
-    color: var(--primary-dark-color);
-    font-size: 0.875rem;
-    margin-bottom: 1.05rem;
+        font-family: var(--main-font-title);
+        font-weight: 700;
+        color: var(--primary-dark-color);
+        font-size: 0.875rem;
+        margin-bottom: 1.05rem;
     }
 
     .card-text{
@@ -51,7 +51,7 @@
     .main-btn{
         display: inline-block;
         color:var(--button-color);
-        padding: 1rem 3.125rem;
+        padding: 1rem 4.125rem;
         text-decoration: none;
         font-family:var(--main-font-title);
         font-weight: 700;
@@ -60,14 +60,14 @@
         border-radius: 2.25rem;
     }
 
-@media (max-width:699px){
+@media (max-width:747px){
 
     .partner-card:not(:last-child){        
         margin-bottom: 1.875rem;
     }
 }
 
-@media (min-width:700px){
+@media (min-width:748px){
 
     .main-wrapper{
         padding: 4.6875rem 8.625rem 2.5rem 8.625rem;        
@@ -75,20 +75,10 @@
 
     .main-title{    
         padding: 0;
-    }
-
-    .partners-list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .partner-card{
-    flex-basis: 50%;
-    }
+    }   
 }
 
-@media (min-width:700px) and (max-width:939px) {
+@media (min-width:748px) and (max-width:939px) {
 
     .partner-card:nth-of-type(-n+2){        
         margin-bottom: 1.875rem;
@@ -100,18 +90,4 @@
     .main-wrapper{
         padding: 4.375rem 0 3.75rem 0;        
     }
-
-    
-    .partners-list{
-        justify-content: space-between;
-    }
-
-    .partner-card{
-        flex-basis: 25%;
-    }
-
-    /* .partner-card{
-        margin-bottom: 0;
-    } */
-    
 }
