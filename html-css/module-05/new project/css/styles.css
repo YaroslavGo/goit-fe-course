@@ -47,6 +47,10 @@ text-decoration: none;
 }
 
 /* --corusel--- */
+  .carousel-slide{
+    position: relative;
+  }
+
   .slider-text-first {
     position: absolute;
     top: 235px;
@@ -171,6 +175,7 @@ text-decoration: none;
 
 
   .main-title{
+    position: relative;
     color: var(--primary-dark-color);
     font-family: var(--secondary-font);
     font-size: 48px;
@@ -182,9 +187,10 @@ text-decoration: none;
   .main-title::after{
     content: "";
     display: inline-block;
+    position: absolute;
     width: 164px;
     height: 7px;
-    top:0;
-    left:0;
+    top:61px;
+    left:calc(50% - 82px);;
     background-color: #1abc9c;
   }
