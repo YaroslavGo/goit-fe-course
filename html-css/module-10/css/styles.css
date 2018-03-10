@@ -9,30 +9,64 @@
       from(rgba(252, 227, 138, 0.81)),
       to(rgba(243, 129, 129, 0.81))
     ),
-    url("../img/Layer 15.png");
+    url("../img/Layer 15-min.png");
   background-image: -webkit-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.81) 0%,
       rgba(243, 129, 129, 0.81) 100%
     ),
-    url("../img/Layer 15.png");
+    url("../img/Layer 15-min.png");
   background-image: -o-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.81) 0%,
       rgba(243, 129, 129, 0.81) 100%
     ),
-    url("../img/Layer 15.png");
+    url("../img/Layer 15-min.png");
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.81) 0%,
       rgba(243, 129, 129, 0.81) 100%
     ),
-    url("../img/Layer 15.png");
+    url("../img/Layer 15-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 22px;
   padding-bottom: 230px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .masthead-wrapper {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.81)),
+        to(rgba(243, 129, 129, 0.81))
+      ),
+      url("../img/Layer 15-min@2.png");
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/Layer 15-min@2.png");
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/Layer 15-min@2.png");
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/Layer 15-min@2.png");
+  }
 }
 
 
@@ -80,18 +114,19 @@
 }
 
 .masthead__nav {
-  margin-right: 52px;
-  margin-left: 494px;
+margin-left: auto;
+margin-right: 55px;
 }
 
 .nav__item {
   list-style: none;
   text-transform: uppercase;
-  border-bottom: 2px solid rgba(252, 227, 138, 0);
+  border-bottom: 3px solid rgba(252, 227, 138, 0);
 }
 
-.nav__item:hover {
-  border-bottom: 2px solid rgb(252, 227, 138);
+.nav__item:hover,
+.options__link:hover {
+  border-bottom: 3px solid rgb(252, 227, 138);
 }
 
 .nav__item:not(:last-child) {
@@ -108,7 +143,7 @@
   line-height: 45px;
 }
 
-.options {
+.masthead_options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,9 +157,11 @@
   text-decoration: none;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  line-height: 45px;
+  border-bottom: 3px solid rgba(252, 227, 138, 0);
 }
 
-.options__link:not(:last-child) {
+.options__link:first-child {
   margin-right: 38px;
 }
 
@@ -228,6 +265,17 @@
 }
 
 /* LIST SERVICE */
+
+.alarm-icon{
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 31px;
+  background: url("./alarm.svg") no-repeat center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 .list-service {
   max-width: 1142px;
