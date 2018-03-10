@@ -267,15 +267,33 @@ margin-right: 55px;
 /* LIST SERVICE */
 
 .alarm-icon{
+  background: url("../img/alarm.svg") no-repeat center;
+}
+.line-graph-icon{
+  background: url("../img/line-graph.svg") no-repeat center;
+}
+.computer-icon{
+  background: url("../img/computer-ok.svg") no-repeat center;
+}
+.book-icon{
+  background: url("../img/book-2.svg") no-repeat center;
+}
+.home-icon{
+  background: url("../img/home.svg") no-repeat center;
+}
+.image-icon{
+  background: url("../img/image.svg") no-repeat center;
+}
+
+.image-icon, .home-icon, .book-icon,
+.computer-icon, .line-graph-icon, .alarm-icon{
   display: block;
   margin: 0 auto;
   width: 32px;
   height: 31px;
-  background: url("./alarm.svg") no-repeat center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 
 .list-service {
   max-width: 1142px;
