@@ -22,6 +22,13 @@
       rgba(243, 129, 129, 0.81) 100%
     ),
     url("../img/Layer 15-min.png");
+  background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.81)),
+      to(rgba(243, 129, 129, 0.81))
+    ),
+    url("../img/Layer 15-min.png");
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.81) 0%,
@@ -58,6 +65,13 @@
         bottom,
         rgba(252, 227, 138, 0.81) 0%,
         rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/Layer 15-min@2.png");
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(252, 227, 138, 0.81)),
+        to(rgba(243, 129, 129, 0.81))
       ),
       url("../img/Layer 15-min@2.png");
     background-image: linear-gradient(
@@ -233,6 +247,10 @@ margin-right: 55px;
 
 .section-header {
   text-align: center;
+}
+
+.section-header__service{
+  margin-bottom: 60px;
 }
 
 .section-header__caption {
@@ -451,6 +469,12 @@ margin-right: 55px;
     bottom,
     rgba(252, 227, 138, 0.81) 0%,
     rgba(243, 129, 129, 0.81) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(252, 227, 138, 0.81)),
+    to(rgba(243, 129, 129, 0.81))
   );
   background-image: linear-gradient(
     to top,
