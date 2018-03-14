@@ -1,0 +1,49 @@
+/* BANNER */
+
+.masthead__banner {
+  margin-top: 154px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner {
+  min-width: 541px;
+  max-width: 802px;
+  text-align: center;
+  
+  &__motto {
+    color: $white;
+    text-transform: capitalize;
+    display: block;
+    @include font($kaushan-script, 72px, 400 , 72px);
+  }
+
+  &__title {
+    max-width: 802px;
+    letter-spacing: -7px;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 109px;
+    @include font($serif, 150px, 700, 140px);
+  }
+}
+
+/* BUTTON */
+
+.button {
+  width: 160px;
+  height: 40px;
+  display: inline-block;
+  border: 3px solid $white;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include font($serif, 14px, 700, 37px);
+
+  &:hover {
+    border: 3px solid rgba(243, 129, 129, 0.81);
+    color: rgba(243, 129, 129, 0.81);
+  }
+}
+

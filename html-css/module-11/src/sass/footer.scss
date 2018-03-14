@@ -1,0 +1,35 @@
+/* FOOTER */
+
+.footer {
+  background-color: $white;
+  padding-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 8px;
+}
+
+.copyright__text {
+  color: $dark;
+  @include font($serif, 14px, 400, 16px);
+}
+
+.copyright__word--red {
+  color: $pink;
+}
+
+/* FORM */
+
+.form {
+  display: flex;
+  align-items: center;
+
+  &__email {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background-color: $white;
+    padding-left: 13px;
+  }
+}
+

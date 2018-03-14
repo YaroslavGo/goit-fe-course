@@ -1,0 +1,138 @@
+/* SECTION TEAM */
+
+.team-wrapper {
+  padding-top: 74px;
+  padding-bottom: 79px;
+}
+
+.section-header__text {
+  max-width: 954px;
+  color: $grey;
+  @include font($robo, 15px, 400, 24px);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+/* LIST TEAM */
+
+.team-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__team-list {
+  margin-top: 89px;
+}
+
+.team-list__item {
+  list-style: none;
+}
+
+/* CARD TEAM */
+
+.team-card {
+  background-color: $aqua;
+
+  &__content {
+    position: relative;
+    transition: transform 0.2s linear;
+
+    &::after {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      content: "";
+      background-image: linear-gradient(
+       to top,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+        );
+      transition: opacity 0.2s linear;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    background-color: $white;
+  }
+
+  &__name {
+    display: block;
+    color: $dark;
+    @include font($serif, 14px, 700, 16px);
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  &__pos {
+    display: block;
+    font-style: italic;
+    color: $grey;
+    @include font($robo, 15px, 400, 24px);
+  }
+}
+
+
+.team-card:hover .team-card__content {
+  transform: translate(-10px, -10px);
+}
+
+.team-card:hover .team-card__content::after {
+  opacity: 1;
+}
+
+
+/* ICONS TEAM */
+
+.team-card:hover .team-icons {
+  opacity: 1;
+}
+
+.team-icons {
+  display: inline-block;
+  background-color: #fce38a;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.team-card__team-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.team-icons__facebook,
+.team-icons__twitter,
+.team-icons__pinterest,
+.team-icons__instagram {
+  display: inline-block;
+  text-decoration: none;
+  fill: #f38181;
+  padding: 15px 20px;
+}
+
+.team-icons__facebook:hover,
+.team-icons__twitter:hover,
+.team-icons__pinterest:hover,
+.team-icons__instagram:hover {
+  fill: #ffffff;
+  background-color: #f38181;
+}
+
+/* TEAM FOOTER */
+
