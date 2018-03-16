@@ -1,0 +1,255 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+//  Base --------------------
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1070px;
+    margin: auto;
+}
+
+// HEADER ---------------
+
+.masthead-wrapper{
+    background-image: url("../img/pexels-photo-273222.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 558px;
+    padding-top: 60px;
+}
+    
+.header__title{
+    position: relative;
+    display: block;
+    text-align: right;
+    color: $black;
+    text-shadow: 5px 5px 6.65px #d8d9d9;
+    @include font($fat, 90px, 400, 96px);
+    padding-bottom: 80px;
+    text-transform: uppercase;
+
+
+    &::after{
+        content: '';
+        display: block;
+        background: linear-gradient(to right, rgba(255,0,0,0.0) 0%,rgba(255,0,0,1) 27%,rgba(255,0,0,1) 63%);         
+        position: absolute;
+        left: 0px;
+        top: 230px;
+        width: 852px;
+        height: 8px;
+    }
+}
+
+.header__text,
+.offers__text{
+    display: block;
+    color: $yellow;
+    text-shadow: 0px 5px 6.37px $black;
+    @include font($fat, 60px, 400, 64px);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.header__image{
+    padding: 5px;
+    width: 186px;
+    height: 93px;
+}
+
+
+// OFFER ---------------
+  
+.offers-wrapper{
+    background-color: $white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 540px;
+}
+
+.offers__title{
+    color:$black;
+    @include font($fat, 60px, 400, 64px);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+
+    &::after{
+        content: '';
+        display: block;
+        background: linear-gradient(to right, rgba(252,0,0,0.5) 0%,rgba(252,0,0,0.5) 1%,rgba(252,0,0,1) 52%,rgba(252,0,0,0.5) 99%,rgba(252,0,0,0.5) 100%);
+        position: absolute;
+        left: 50%;
+        transform: translateX( -50%);
+        top: 674px;
+        width: 400px;
+        height: 7px;
+    }
+}
+
+.offers__text{
+    margin-bottom: 50px;
+}
+
+.offers__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}  
+
+.list-title{
+    @include font($fat, 30px, 400, 32px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.list-text{
+    color: $yellow;
+    @include font($fat, 20px, 400, 24px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offers__item{
+    position: relative;
+    flex-basis: 30%;
+    padding-left: 70px;
+
+    &:nth-child(-n+3){
+        margin-bottom: 30px;
+    }
+}
+
+.presentation-icon::before {
+    background-image: url('../img/seo-training.svg');    
+}
+
+.seminar-icon::before{
+    background-image: url('../img/seminar.svg');    
+}
+
+.sertificate-icon::before{
+    background-image: url('../img/icon.svg');    
+}
+
+.meeting-icon::before{
+    background-image: url('../img/handshake.svg');    
+}
+
+.structure-icon::before{
+    background-image: url('../img/connection.svg'); 
+}
+
+.relax-icon::before{
+    background-image: url('../img/worker.svg');   
+}
+
+
+.presentation-icon::before, .seminar-icon::before, .sertificate-icon::before,
+.meeting-icon::before, .structure-icon::before, .relax-icon::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: inline-block;
+    content: '';
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// CONTACTS --------------
+
+.contact-wrapper{
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../img/pexels-photo-417360.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 340px;
+    padding-top: 40px;
+    text-align: center;
+    background-blend-mode: overlay;
+}
+
+
+.contacts__text,
+.contacts__phone{
+    display: block;
+    @include font($fat, 40px, 400, 44px);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: $white;
+}
+
+.contacts__title{
+    display: block;
+    @include font($fat, 90px, 400, 94px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-item{
+    flex-basis: 70px;
+    height: 70px;
+
+    &:not(last-child) {
+        margin-right: 30px;
+    }
+}
+
+.social-item::not(:last-child()){
+    margin-right: 30px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.facebook-icon::before{    
+    content: url('../img/facebook-logo-button.svg');    
+}
+
+.viber-icon::before{    
+    content: url('../img/viber.svg');    
+}
+
+.instagram-icon::before{    
+    content: url('../img/instagram.svg');    
+}
+
+.viber-icon::before, .instagram-icon::before, .facebook-icon::before{
+    width: 70px;
+    height: 70px;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.contacts__phone{
+    font-size: 30px;
+    text-decoration: none;
+}

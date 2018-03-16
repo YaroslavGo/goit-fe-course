@@ -1,0 +1,475 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+a {
+	background-color: transparent;
+}
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+	display: block;
+	width: 100%;
+}
+
+/* Forms
+   ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1070px;
+	margin: auto;
+}
+
+.masthead-wrapper {
+	background-image: url("../img/pexels-photo-273222.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 558px;
+	padding-top: 60px;
+}
+
+.header__title {
+	position: relative;
+	display: block;
+	text-align: right;
+	color: #000000;
+	text-shadow: 5px 5px 6.65px #d8d9d9;
+	font-family: "Russo One", sans-serif;
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 96px;
+	padding-bottom: 80px;
+	text-transform: uppercase;
+}
+
+.header__title::after {
+	content: '';
+	display: block;
+	background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, red 27%, red 63%);
+	position: absolute;
+	left: 0px;
+	top: 230px;
+	width: 852px;
+	height: 8px;
+}
+
+.header__text,
+.offers__text {
+	display: block;
+	color: #ffae00;
+	text-shadow: 0px 5px 6.37px #000000;
+	font-family: "Russo One", sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 64px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.header__image {
+	padding: 5px;
+	width: 186px;
+	height: 93px;
+}
+
+.offers-wrapper {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	min-height: 540px;
+}
+
+.offers__title {
+	color: #000000;
+	font-family: "Russo One", sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 64px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.offers__title::after {
+	content: '';
+	display: block;
+	background: linear-gradient(to right, rgba(252, 0, 0, 0.5) 0%, rgba(252, 0, 0, 0.5) 1%, #fc0000 52%, rgba(252, 0, 0, 0.5) 99%, rgba(252, 0, 0, 0.5) 100%);
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 674px;
+	width: 400px;
+	height: 7px;
+}
+
+.offers__text {
+	margin-bottom: 50px;
+}
+
+.offers__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.list-title {
+	font-family: "Russo One", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 32px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.list-text {
+	color: #ffae00;
+	font-family: "Russo One", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.offers__item {
+	position: relative;
+	flex-basis: 30%;
+	padding-left: 70px;
+}
+
+.offers__item:nth-child(-n+3) {
+	margin-bottom: 30px;
+}
+
+.presentation-icon::before {
+	background-image: url("../img/seo-training.svg");
+}
+
+.seminar-icon::before {
+	background-image: url("../img/seminar.svg");
+}
+
+.sertificate-icon::before {
+	background-image: url("../img/icon.svg");
+}
+
+.meeting-icon::before {
+	background-image: url("../img/handshake.svg");
+}
+
+.structure-icon::before {
+	background-image: url("../img/connection.svg");
+}
+
+.relax-icon::before {
+	background-image: url("../img/worker.svg");
+}
+
+.presentation-icon::before,
+.seminar-icon::before,
+.sertificate-icon::before,
+.meeting-icon::before,
+.structure-icon::before,
+.relax-icon::before {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+	display: inline-block;
+	content: '';
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contact-wrapper {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: url("../img/pexels-photo-417360.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 340px;
+	padding-top: 40px;
+	text-align: center;
+	background-blend-mode: overlay;
+}
+
+.contacts__text,
+.contacts__phone {
+	display: block;
+	font-family: "Russo One", sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 44px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+
+.contacts__title {
+	display: block;
+	font-family: "Russo One", sans-serif;
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 94px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.social-item {
+	flex-basis: 70px;
+	height: 70px;
+}
+
+.social-item:not(last-child) {
+	margin-right: 30px;
+}
+
+.social-item::not(:last-child()) {
+	margin-right: 30px;
+}
+
+.social-link {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.facebook-icon::before {
+	content: url("../img/facebook-logo-button.svg");
+}
+
+.viber-icon::before {
+	content: url("../img/viber.svg");
+}
+
+.instagram-icon::before {
+	content: url("../img/instagram.svg");
+}
+
+.viber-icon::before,
+.instagram-icon::before,
+.facebook-icon::before {
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.contacts__phone {
+	font-size: 30px;
+	text-decoration: none;
+}
+

@@ -1,0 +1,16 @@
+$script: 'Marck Script', cursive;
+$fat: 'Russo One', sans-serif;
+
+@mixin font($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// colors
+
+$white: #ffffff;
+$yellow: #ffae00;
+$black: #000000;
+$red:#d31818;
