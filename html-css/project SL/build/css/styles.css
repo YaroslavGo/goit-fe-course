@@ -427,45 +427,19 @@ img {
 	height: 70px;
 }
 
-.social-item:not(last-child) {
-	margin-right: 30px;
-}
-
-.social-item::not(:last-child()) {
-	margin-right: 30px;
-}
-
 .social-link {
 	display: inline-block;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.facebook-icon::before {
-	content: url("../img/facebook-logo-button.svg");
-}
-
-.viber-icon::before {
-	content: url("../img/viber.svg");
-}
-
-.instagram-icon::before {
-	content: url("../img/instagram.svg");
-}
-
-.viber-icon::before,
-.instagram-icon::before,
-.facebook-icon::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 70px;
 	height: 70px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.social-link:not(nth-last-child) {
+	margin-right: 30px;
 }
 
 .contacts__phone {
