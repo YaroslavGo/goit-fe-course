@@ -21,6 +21,7 @@
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -30,6 +31,10 @@
 
 .team-list__item {
   list-style: none;
+
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
 }
 
 /* CARD TEAM */
@@ -136,3 +141,46 @@
 
 /* TEAM FOOTER */
 
+
+// -------MEADIA---------
+
+@media (min-width:640px){
+  .container{
+    width: 640px;   
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  
+  .team-list__item {  
+    &:not(:last-child){
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  .team-icons__facebook,
+  .team-icons__twitter,
+  .team-icons__pinterest,
+  .team-icons__instagram {
+    padding: 8px 13px;
+  }
+}
+
+
+@media (min-width:1200px){
+  .container{
+    width: 900px;   
+  } 
+
+  .team-icons__facebook,
+  .team-icons__twitter,
+  .team-icons__pinterest,
+  .team-icons__instagram {
+    display: inline-block;
+    text-decoration: none;
+    fill: #f38181;
+    padding: 15px 20px;
+  }
+}

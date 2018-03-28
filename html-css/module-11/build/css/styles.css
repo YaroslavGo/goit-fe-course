@@ -208,11 +208,11 @@ template {
 	background-size: cover;
 	background-position: center;
 	padding-top: 22px;
-	padding-bottom: 230px;
+	padding-bottom: 100px;
 }
 
 .container {
-	max-width: 1200px;
+	width: 360px;
 	margin: auto;
 }
 
@@ -220,7 +220,10 @@ template {
 
 .masthead {
 	display: flex;
-	min-height: 37px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
 }
 
 /* LOGO */
@@ -243,8 +246,8 @@ template {
 /* MENU */
 
 .masthead__nav {
-	margin-left: auto;
-	margin-right: 55px;
+	flex-basis: 90%;
+	justify-content: center;
 }
 
 .nav {
@@ -252,6 +255,7 @@ template {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .nav__item {
@@ -265,7 +269,7 @@ template {
 }
 
 .nav__item:not(:last-child) {
-	margin-right: 55px;
+	margin-right: 15px;
 }
 
 .nav__link {
@@ -281,6 +285,11 @@ template {
 .masthead_options {
 	display: flex;
 	align-items: center;
+	order: -1;
+}
+
+.options__item:not(:last-child) {
+	margin-right: 38px;
 }
 
 .options__link {
@@ -295,21 +304,15 @@ template {
 	border-bottom: 3px solid #fbe287cf;
 }
 
-.options__link:first-child {
-	margin-right: 38px;
-}
-
 /* BANNER */
 
 .masthead__banner {
-	margin-top: 154px;
+	margin-top: 100px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .banner {
-	min-width: 541px;
-	max-width: 802px;
 	text-align: center;
 }
 
@@ -318,22 +321,21 @@ template {
 	text-transform: capitalize;
 	display: block;
 	font-family: "Kaushan Script", cursive;
-	font-size: 72px;
+	font-size: 50px;
 	font-weight: 400;
-	line-height: 72px;
+	line-height: 60px;
 }
 
 .banner__title {
-	max-width: 802px;
-	letter-spacing: -7px;
+	letter-spacing: -5px;
 	color: #ffffff;
 	text-transform: uppercase;
 	margin-top: 35px;
-	margin-bottom: 109px;
+	margin-bottom: 60px;
 	font-family: "Montserrat", Arial, Helvetica, sans-serif;
-	font-size: 150px;
+	font-size: 70px;
 	font-weight: 700;
-	line-height: 140px;
+	line-height: 84px;
 }
 
 /* BUTTON */
@@ -362,7 +364,7 @@ template {
 /* HEADER SERVICE */
 
 .service-wrapper {
-	padding-top: 45px;
+	padding-top: 30px;
 	background-color: #ffffff;
 }
 
@@ -371,7 +373,7 @@ template {
 }
 
 .section-header__service {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .section-header__caption {
@@ -397,11 +399,11 @@ template {
 .section-header__title::after {
 	display: block;
 	content: "";
-	width: 60px;
-	height: 3px;
+	width: 30%;
+	height: 2px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 37px;
+	margin-top: 15px;
 	background-color: #f38181cf;
 }
 
@@ -452,20 +454,19 @@ template {
 }
 
 .list-service {
-	max-width: 1142px;
 	padding-left: 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .list-service__item {
 	list-style: none;
-	flex-basis: 340px;
+	flex-basis: 90%;
 }
 
-.list-service__item:not(:nth-last-child(-n + 3)) {
-	margin-bottom: 94px;
+.list-service__item:not(:last-child) {
+	margin-bottom: 30px;
 }
 
 .service-content {
@@ -525,6 +526,7 @@ template {
 	padding-left: 0;
 	margin-bottom: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -534,6 +536,10 @@ template {
 
 .team-list__item {
 	list-style: none;
+}
+
+.team-list__item:not(:last-child) {
+	margin-bottom: 25px;
 }
 
 /* CARD TEAM */
@@ -647,9 +653,11 @@ template {
 
 .footer {
 	background-color: #ffffff;
-	padding-bottom: 11px;
+	padding-bottom: 70px;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	border-top: 1px solid #e5e5e5;
 	padding-top: 8px;
 }
@@ -660,6 +668,7 @@ template {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
+	margin-bottom: 20px;
 }
 
 .copyright__word--red {
@@ -684,7 +693,191 @@ template {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 
 .masthead-wrapper {
-	background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%), url("../img/Layer 15-min@2.png");
+	background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%), url("../img/Layer 15@2-min.png");
+}
+
+}
+
+@media (min-width: 640px) {
+
+.masthead-wrapper {
+	padding-bottom: 150px;
+}
+
+.container {
+	width: 640px;
+}
+
+.masthead {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.masthead__nav {
+	flex-basis: 0;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.masthead_options {
+	order: 0;
+}
+
+.masthead__banner {
+	margin-top: 120px;
+}
+
+.banner {
+	min-width: 541px;
+	max-width: 802px;
+}
+
+.banner__motto {
+	font-family: "Kaushan Script", cursive;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 72px;
+}
+
+.banner__title {
+	max-width: 802px;
+	letter-spacing: -7px;
+	margin-bottom: 109px;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	font-size: 125px;
+	font-weight: 700;
+	line-height: 130px;
+}
+
+.container {
+	width: 640px;
+}
+
+.service-wrapper {
+	padding-top: 45px;
+}
+
+.section-header__service {
+	margin-bottom: 60px;
+}
+
+.section-header__title::after {
+	width: 30%;
+	margin-top: 37px;
+}
+
+.list-service {
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.list-service__item {
+	list-style: none;
+	flex-basis: 310px;
+}
+
+.list-service__item:not(:nth-last-child(-n + 2)) {
+	margin-bottom: 94px;
+}
+
+.service-content__box {
+	flex-basis: 250px;
+}
+
+.container {
+	width: 640px;
+}
+
+.team-list {
+	flex-wrap: nowrap;
+}
+
+.team-list__item:not(:last-child) {
+	margin-right: 15px;
+	margin-bottom: 0;
+}
+
+.team-icons__facebook,
+.team-icons__twitter,
+.team-icons__pinterest,
+.team-icons__instagram {
+	padding: 8px 13px;
+}
+
+.container {
+	width: 640px;
+}
+
+.footer {
+	flex-direction: row;
+}
+
+.copyright__text {
+	margin-bottom: 0;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.masthead-wrapper {
+	padding-bottom: 230px;
+}
+
+.container {
+	width: 1200px;
+}
+
+.masthead__nav {
+	margin-left: auto;
+	margin-right: 55px;
+}
+
+.nav:not(:last-child) {
+	margin-right: 55px;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 35px;
+}
+
+.masthead__banner {
+	margin-top: 154px;
+}
+
+.container {
+	width: 1200px;
+}
+
+.list-service__item {
+	flex-basis: 340px;
+}
+
+.service-content__box {
+	flex-basis: 278px;
+}
+
+.container {
+	width: 900px;
+}
+
+.team-icons__facebook,
+.team-icons__twitter,
+.team-icons__pinterest,
+.team-icons__instagram {
+	display: inline-block;
+	text-decoration: none;
+	fill: #f38181;
+	padding: 15px 20px;
+}
+
+.container {
+	width: 900px;
 }
 
 }

@@ -128,8 +128,8 @@
 }
 
 .masthead__nav {
-margin-left: auto;
-margin-right: 55px;
+  margin-left: auto;
+  margin-right: 55px;
 }
 
 .nav__item {
@@ -287,18 +287,23 @@ margin-right: 55px;
 .alarm-icon{
   background: url("../img/alarm.svg") no-repeat center;
 }
+
 .line-graph-icon{
   background: url("../img/line-graph.svg") no-repeat center;
 }
+
 .computer-icon{
   background: url("../img/computer-ok.svg") no-repeat center;
 }
+
 .book-icon{
   background: url("../img/book-2.svg") no-repeat center;
 }
+
 .home-icon{
   background: url("../img/home.svg") no-repeat center;
 }
+
 .image-icon{
   background: url("../img/image.svg") no-repeat center;
 }
